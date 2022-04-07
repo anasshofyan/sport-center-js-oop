@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport Center</title>
+</head>
+<script>
+    class SportCenter {
+        constructor(namaSportCenter, kapasitas, owner, alamat, phone){
+            this.namaSportCenter = namaSportCenter;
+            this.kapasitas = kapasitas;
+            this.owner = owner;
+            this.alamat = alamat;
+            this.phone = phone;
+        }
+
+        setSportCenter(namaSportCenter, kapasitas, owner, alamat, phone){
+            this.namaSportCenter = namaSportCenter;
+            this.kapasitas = kapasitas;
+            this.owner = owner;
+            this.phone = phone;
+            this.alamat = alamat;
+        }
+
+        getSportCenter(){
+            console.log("Nama Sport Center", this.namaSportCenter);
+        }
+
+    }
+
+    const anas = new SportCenter("Ajudan", "300K", "Akbar", "Surabaya", "901930193");
+    anas.getSportCenter()
+
+</script>
+
+<body>
+
+</body>
+
+</html>
